@@ -1,10 +1,10 @@
 import React from 'react'
-import NavBar from '../ui/NavBar'
+
 
 const DcScreen = () => {
     return (
         <div>
-            <NavBar />
+           <h1>Home</h1>
             
         </div>
     )
