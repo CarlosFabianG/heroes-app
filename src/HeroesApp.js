@@ -1,5 +1,5 @@
 import React from 'react'
-import Router from './router/router'
+import Router from './router/AppRouter'
 
 const HeroesApp = () => {
     return (

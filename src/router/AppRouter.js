@@ -1,7 +1,7 @@
 import React from 'react'
 import DcScreen from '../components/dc/DcScreen'
 import LoginScreen from '../components/login/LoginScreen'
-import NavBar from '../components/ui/NavBar'
+import DashboardRouter from './DashboardRouter'
 import {
     BrowserRouter,
     Switch,
@@ -11,10 +11,9 @@ import {
 const Router = () => {
     return (
         < BrowserRouter>
-          <NavBar />
           <Switch>
             <Route exact path="/" component={DcScreen}></Route>
-            <Route exact path="/login" component={LoginScreen}></Route>
+            <Route exact path="/login" component={DashboardRouter}></Route>
           </Switch>
       </ BrowserRouter>
     )
