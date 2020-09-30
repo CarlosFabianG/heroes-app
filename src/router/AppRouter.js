@@ -10,10 +10,10 @@ import {
 
 const Router = () => {
     return (
-        < BrowserRouter>
+        <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={DcScreen}></Route>
-            <Route exact path="/login" component={DashboardRouter}></Route>
+          <Route exact path="/login" component={LoginScreen}></Route>
+            <Route path="/" component={DashboardRouter}></Route>
           </Switch>
       </ BrowserRouter>
     )
