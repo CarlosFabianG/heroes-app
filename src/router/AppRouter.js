@@ -1,5 +1,4 @@
 import React from 'react'
-import DcScreen from '../components/dc/DcScreen'
 import LoginScreen from '../components/login/LoginScreen'
 import DashboardRouter from './DashboardRouter'
 import {
@@ -12,7 +11,7 @@ const Router = () => {
     return (
         <BrowserRouter>
           <Switch>
-          <Route exact path="/login" component={LoginScreen}></Route>
+            <Route exact path="/login" component={LoginScreen}></Route>
             <Route path="/" component={DashboardRouter}></Route>
           </Switch>
       </ BrowserRouter>
