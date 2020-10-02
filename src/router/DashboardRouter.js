@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import NavBar from '../components/ui/NavBar'
 import DcScreen from '../components/dc/DcScreen'
 import MarvelScreen from '../components/marvel/MarvelScreen'
+import HeroScreen from '../components/hero/HeroScreen'
 
 const DashboardRouter = () => {
     return (
@@ -12,6 +13,7 @@ const DashboardRouter = () => {
                 <Switch>
                     <Route exact path="/marvel" component={MarvelScreen} />
                     <Route exact path="/dc" component={DcScreen} />
+                    <Route exact path="/hero/:heroId" component={HeroScreen} />
                     <Redirect to="/marvel" />
                 </Switch>
             </div>
