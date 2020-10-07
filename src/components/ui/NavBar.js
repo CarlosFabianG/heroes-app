@@ -32,6 +32,14 @@ const Navbar = () => {
                     >
                         DC
                     </NavLink>
+                    <NavLink
+                        activeClassName="active"
+                        className="nav-item nav-link" 
+                        exact
+                        to="/searchscreen"
+                    >
+                        SearchScreen
+                    </NavLink>
                 </div>
             </div>
 
